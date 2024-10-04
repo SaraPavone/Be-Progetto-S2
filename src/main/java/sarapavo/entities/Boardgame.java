@@ -1,11 +1,11 @@
 package sarapavo.entities;
 
-public class Boardgames extends Games {
+public class Boardgame extends Games {
     private Integer numOfPlayers;
     private Integer averageLength;
 
-    public Boardgames(Integer id, Double price, Integer year, String title, Integer averageLength, Integer numOfPlayers) {
-        super(id, price, year, title);
+    public Boardgame(Integer id, String title, Integer year, Double price, Integer averageLength, Integer numOfPlayers) {
+        super(id, title, year, price);
         this.averageLength = averageLength;
         this.numOfPlayers = numOfPlayers;
     }
@@ -28,7 +28,7 @@ public class Boardgames extends Games {
 
     @Override
     public String toString() {
-        return "Boardgames{" +
+        return "Boardgame{" +
                 "numOfPlayers=" + numOfPlayers +
                 ", averageLength=" + averageLength +
                 '}' + super.toString();

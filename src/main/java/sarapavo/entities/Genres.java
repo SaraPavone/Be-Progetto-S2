@@ -8,5 +8,8 @@ public enum Genres {
     PUZZLE,
     RPG,
     ACTION,
-    SIMULATION;
+    SIMULATION,
+    ADVENTURE,
+    OPENWORLD,
+    SPORT
 }

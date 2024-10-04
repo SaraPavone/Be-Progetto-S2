@@ -1,13 +1,13 @@
 package sarapavo.entities;
 
-public class Videogames extends Games {
+public class Videogame extends Games {
     private Genres genre;
     private String platform;
     private Integer gameDuration;
 
     //COSTRUTTORE
-    public Videogames(Integer id, Double price, Integer year, String title, String platform, Integer gameDuration, Genres genre) {
-        super(id, price, year, title);
+    public Videogame(Integer id, String title, Integer year, Double price, String platform, Integer gameDuration, Genres genre) {
+        super(id, title, year, price);
         this.platform = platform;
         this.gameDuration = gameDuration;
         this.genre = genre;
@@ -39,7 +39,7 @@ public class Videogames extends Games {
 
     @Override
     public String toString() {
-        return "Videogames{" +
+        return "Videogame{" +
                 "platform='" + platform + '\'' +
                 ", gameDuration=" + gameDuration +
                 ", genre='" + genre + '\'' +

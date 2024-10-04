@@ -8,11 +8,14 @@ public abstract class Games {
 
 
     //COSTRUTTORE
-    public Games(Integer id, Double price, Integer year, String title) {
+    public Games(Integer id, String title, Integer year, Double price) {
+
         this.id = id;
-        this.price = price;
-        this.year = year;
         this.title = title;
+        this.year = year;
+        this.price = price;
+
+
     }
 
     public Integer getId() {
